@@ -1,0 +1,249 @@
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+[hidden],template{display:none}
+a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+img{border-style:none}
+button,input,select,textarea{font:inherit;margin:0}
+button,input{overflow:visible}
+button,select{text-transform:none}
+button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-input-placeholder{color:inherit;opacity:0.54}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End normalize.css extract */
+/* Extract from w3.css 4.04 Apr 2017 by Jan Egil and Borge Refsnes */ 
+html{box-sizing:border-box}
+*,*:before,*:after{box-sizing:inherit}
+html,body{line-height:1.5}
+html{overflow-x:hidden}
+h1{font-size:2.25rem}
+h2{font-size:1.875rem}
+h3{font-size:1.5rem}
+h4{font-size:1.25rem}
+h5{font-size:1.125rem}
+h6{font-size:1rem}
+h1,h2,h3,h4,h5,h6{margin:0.5rem 0}
+img{margin-bottom:-5px}
+a{color:inherit}
+/* End w3.css extract*/
+
+
+/* fonts */
+.montserrat {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
+	font-weight: 400 !important;
+}
+.montserrat-light {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
+	font-weight: 300 !important;
+}
+.josefin-sans {
+	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif !important;
+	font-weight: 400 !important;
+}
+.josefin-sans-light {
+	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif !important;
+	font-weight: 300 !important;
+}
+
+
+/* colours */
+
+.bg-white { background-color: #fff; }
+.text-charcoal-dark { color: #0b0b0b; }
+
+
+/* page styles */
+
+body, html {
+    height: 100%;
+    font-size: 12px;
+}
+
+@media (min-width: 481px){ 
+	body, html { font-size: 14px; }
+}
+
+@media (min-width: 769px){
+	body, html { font-size: 15px; }
+}
+
+@media (min-width: 1025px){
+	body, html { font-size: 16px; }
+}
+
+.layout-area {
+	position: relative;
+	width: 100%;
+    height: 100%;
+    background-color: #EEE;
+    overflow: hidden;  
+}
+
+
+.display-topleft {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.display-middle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+.display-bottommiddle {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,0%);
+	-ms-transform: translate(-50%,0%);
+}
+
+.layout-panel {
+	text-align: center;
+	display: block;
+}
+
+.layout-panel:before, .layout-panel:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+
+#title-panel {
+/*	width: 450px;*/
+	margin: 0;
+	border: none;
+	padding: 50px;
+	background-color: #fff;
+}
+
+#quote-main-1 {
+	float: none;
+	clear: both;
+	width: 250px;
+	height: 200px;
+	margin: 0 0 20px 50px;
+    border: none;
+	padding: 0;
+	background-image: url('airport.jpg');
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-color: #999;
+}
+#quote-main-1:before, #quote-main-1:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+#quote-frame-1 {
+	width: 250px;
+	height: 200px;
+	margin: 0;
+	border: none;
+	padding: 0;
+	background-image: url('speech-bubble-1.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: transparent;
+}
+
+#quote-main-2 {
+	position: relative;
+	float: left;
+	clear: none;
+	width: 250px;
+	height: 200px;
+	margin: 0 50px 20px 50px;
+    border: none;
+	padding: 0;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-color: #FFF;
+	overflow: hidden;
+}
+#quote-main-2:before, #quote-main-2:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+#quote-main-2 video {
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+#quote-frame-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 200px;
+	margin: 0;
+	border: none;
+	padding: 0;
+	background-image: url('speech-bubble-2.png');
+	background-repeat: no-repeat;
+	background-size: 250px 200px;
+	background-position: center center;
+	background-color: transparent;
+}
+#profile-1 {
+	float: left;
+	clear: none;
+	width: 80px;
+	height: 80px;
+	margin: 0;
+	border-width: 1px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.4);
+    border-radius: 40px;
+    padding: 0;
+    line-height: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+#profile-1:before, #profile-1:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+#profile-2 {
+	float: right;
+	clear: both;
+	width: 80px;
+	height: 80px;
+	margin: 0;
+	border-width: 1px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.4);
+    border-radius: 40px;
+    padding: 0;
+    line-height: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+#profile-2:before, #profile-2:after {
+	content: ""; 
+	display: table; 
+	clear: both; 
+}
+
+#imagepile {
+	position: absolute;
+	top: 100%;
+}
